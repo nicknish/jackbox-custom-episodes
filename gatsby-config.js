@@ -13,7 +13,7 @@ module.exports = {
             options: {
                 // TODO: Double-check this
                 trackingIds: [
-                    'GA-262379371', // Google Analytics / GA
+                    process.env.GA_TRACKING_ID, // Google Analytics / GA
                 ],
                 pluginConfig: {
                     // Puts tracking script in the head instead of the body
