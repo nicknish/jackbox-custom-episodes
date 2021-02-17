@@ -1,0 +1,12 @@
+.page {
+    composes: prose max-w-2xl mx-auto md-mt-10 from global;
+}
+
+.title {
+    composes: mb-6 text-center from global;
+}
+
+:global(.prose) .ctaPrimary {
+    color: white;
+    text-decoration: none;
+}

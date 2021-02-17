@@ -1,11 +1,12 @@
 .header {
-    background-color: lightblue;
+    composes: bg-purple-500 text-white from global;
     padding: 1.5rem 1rem;
     margin-bottom: 1rem;
+    background: linear-gradient(to right, rgba(139, 92, 246, 0.9) 70%, rgba(139, 92, 246, 1));
 }
 
 .nav {
-    composes: flex items-center from global;
+    composes: flex items-center max-w-6xl mx-auto from global;
     justify-content: space-between;
 }
 
@@ -14,5 +15,18 @@
 }
 
 .logo {
-    font-size: 1.5rem;
+    composes: font-bold uppercase from global;
+}
+
+.ctaBtn {
+    padding: 0.3rem;
+    border-color: white;
+    font-size: 0.75rem;
+}
+
+@media (min-width: 760px) {
+    .ctaBtn {
+        padding: 0.5rem 0.75rem;
+        font-size: 16px;
+    }
 }

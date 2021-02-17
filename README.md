@@ -1,48 +1,35 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby minimal starter
-</h1>
+## Jackbox Custom Episodes
+
+Thanks for checking out the code for
+[Jackbox Custom Episodes](https://jackbox-custom-episodes.netlify.app/)!
+
+If you want to contribute, please follow the instructions below. If you want to report a problem
+with the website, please go to [Issues](https://github.com/nicknish/jackbox-custom-episodes/issues).
 
 ## 🚀 Quick start
 
-1.  **Create a Gatsby site.**
-
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+1. Install dependencies
 
     ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
+    npm install
     ```
 
-2.  **Start developing.**
-
-    Navigate into your new site’s directory and start it up.
+1. Create the `.env` file
 
     ```shell
-    cd my-gatsby-site/
+    touch .env
+    open .env
+    ```
+
+1. Add the `GOOGLE_SHEETS_API_CREDENTIALS` entry to `.env` (Ask maintainer for credentials)
+
+    ```
+    # .env
+    GOOGLE_SHEETS_API_CREDENTIALS={ ... }
+    ```
+
+1. Run the development server!
+
+    ```shell
     npm run develop
     ```
-
-3.  **Open the code and start customizing!**
-
-    Your site is now running at http://localhost:8000!
-
-    Edit `src/pages/index.js` to see your site update in real-time!
-
-4.  **Learn more**
-
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)

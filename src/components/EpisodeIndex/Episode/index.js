@@ -8,7 +8,6 @@ import styles from './Episode.module.css'
 
 export const Episode = ({ code, name, age, date, isNsfw }) => {
     const [state, copyToClipboard] = useCopyToClipboard()
-
     const handleCopyClick = () => copyToClipboard(code)
 
     return (

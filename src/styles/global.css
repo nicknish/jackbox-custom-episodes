@@ -2,12 +2,25 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-html {
-    min-height: 100%;
+html,
+body,
+#___gatsby,
+#gatsby-focus-wrapper {
+    height: 100%;
 }
 
 body {
     padding: 0;
     margin: 0;
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.site {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.site-content {
+    flex: 1 0 auto;
 }

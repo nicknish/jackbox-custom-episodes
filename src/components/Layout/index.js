@@ -7,7 +7,7 @@ import styles from './Layout.module.css'
 
 export const Layout = ({ children }) => {
     return (
-        <div>
+        <div className="site">
             <Nav />
             <main className={styles.content}>{children}</main>
             <Footer />

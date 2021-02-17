@@ -13,7 +13,7 @@
 .name {
     margin: 0;
     margin-bottom: 0.25rem;
-    composes: text-2xl text-gray-800 font-bold from global;
+    composes: text-xl md-text-2xl text-gray-800 font-bold from global;
 }
 
 .info {
@@ -29,7 +29,7 @@
 }
 
 .code {
-    composes: py-1 px-2 ml-2 bg-blue-100 from global;
+    composes: py-1 px-2 ml-2 bg-purple-200 from global;
 }
 
 .clickToCopyButton {

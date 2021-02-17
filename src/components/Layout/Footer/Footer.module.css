@@ -1,10 +1,23 @@
 .footer {
-    composes: text-gray-700 from global;
-    padding: 1rem;
-    text-align: center;
-    background: lightblue;
+    composes: py-6 px-4 bg-purple-500 text-center text-white from global;
+}
+
+.footerTop {
+    composes: mb-6 from global;
+}
+
+.footerNav {
+    composes: flex flex-col md-flex-row md-mx-auto md-justify-center md-space-x-4 from global;
+}
+
+.footerNavItemContainer {
+    composes: mb-1 md-mb-0 from global;
+}
+
+.footerNavItem {
+    composes: inline-block p-1 from global;
 }
 
 .copyright {
-    composes: black underline from global;
+    composes: text-white underline from global;
 }

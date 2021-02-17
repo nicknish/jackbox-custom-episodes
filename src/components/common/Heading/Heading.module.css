@@ -1,0 +1,12 @@
+.h1 {
+    composes: text-4xl from global;
+}
+.h2 {
+    composes: text-3xl from global;
+}
+.h3 {
+    composes: text-2xl from global;
+}
+.h4 {
+    composes: text-xl from global;
+}
