@@ -1,0 +1,49 @@
+.episode {
+    padding: 1rem;
+    border: 1px rgba(0, 0, 0, 0.3) solid;
+    margin-bottom: 2rem;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    font-weight: lighter;
+}
+
+.header {
+    composes: mb-3 from global;
+}
+
+.name {
+    margin: 0;
+    margin-bottom: 0.25rem;
+    composes: text-2xl text-gray-800 font-bold from global;
+}
+
+.info {
+    composes: font-normal text-gray-700 from global;
+}
+
+.date {
+    composes: font-normal text-sm from global;
+}
+
+.codeSection {
+    composes: flex items-center from global;
+}
+
+.code {
+    composes: py-1 px-2 ml-2 bg-blue-100 from global;
+}
+
+.clickToCopyButton {
+    composes: relative inline-block ml-2 from global;
+}
+
+.clickToCopyFeedback {
+    composes: absolute top--1 from global;
+    background: black;
+    font-size: 0.75rem;
+    color: white;
+    border-radius: 4px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform: translateY(calc(-100% - 5px));
+}

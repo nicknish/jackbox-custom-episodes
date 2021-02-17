@@ -1,16 +1,13 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import { Episode } from '../components/Episode'
-import { Layout } from '../components/Layout'
+
+import { Layout } from '../components/layout'
+import { EpisodeIndex } from '../components/EpisodeIndex'
 
 const IndexPage = ({ data }) => {
     return (
         <Layout>
-            <div>
-                {data.values.edges.map(({ node: episode }) => (
-                    <Episode key={episode.id} {...episode} />
-                ))}
-            </div>
+            <EpisodeIndex episodes={data.values.edges} />
         </Layout>
     )
 }

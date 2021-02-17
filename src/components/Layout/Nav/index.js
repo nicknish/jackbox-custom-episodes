@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Button, ButtonTypes } from '../../common/Button'
+import { Button, ButtonSizes, ButtonThemes, ButtonTypes } from '../../common/Button'
 
 import styles from './Nav.module.css'
 
@@ -14,6 +14,8 @@ export const Nav = () => {
                         type={ButtonTypes.ExternalLink}
                         href="https://docs.google.com/forms/d/1qSk093JnIt6uqKAWmNhlZtqaRy1uW_-I3nNKoaphvI4"
                         target="_blank"
+                        theme={ButtonThemes.Primary}
+                        size={ButtonSizes.Large}
                     >
                         Submit new episode
                     </Button>

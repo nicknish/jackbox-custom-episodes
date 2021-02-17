@@ -1,7 +1,25 @@
 .button {
-    font-size: 1rem;
     border: 1px solid grey;
+    border-radius: 0.25rem;
     text-decoration: none;
-    padding: 0.5rem 1rem;
-    color: inherit;
+}
+
+.sizeLg {
+    composes: py-2 px-3 text-lg from global;
+}
+
+.sizeM {
+    composes: py-1 px-2 text-sm from global;
+}
+
+.sizeSm {
+    composes: py-1 px-1 text-xs from global;
+}
+
+.themePrimary {
+    composes: bg-purple-600 text-white from global;
+}
+
+.themeBase {
+    /* composes:  from global; */
 }

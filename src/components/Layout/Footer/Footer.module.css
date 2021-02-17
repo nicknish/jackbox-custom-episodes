@@ -1,10 +1,10 @@
 .footer {
+    composes: text-gray-700 from global;
     padding: 1rem;
     text-align: center;
     background: lightblue;
-    color: black;
 }
 
 .copyright {
-    color: black;
+    composes: black underline from global;
 }

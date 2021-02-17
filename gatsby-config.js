@@ -1,17 +1,15 @@
-require('dotenv').config({
-    path: `.env.${process.env.NODE_ENV}`,
-})
+require('dotenv').config()
 
 module.exports = {
     siteMetadata: {
         title: 'Custom Jackbox Episodes',
+        siteUrl: 'https://custom-jackbox-episodes.netlify.com',
     },
     plugins: [
         'gatsby-plugin-postcss',
         {
             resolve: `gatsby-plugin-google-gtag`,
             options: {
-                // TODO: Double-check this
                 trackingIds: [
                     process.env.GA_TRACKING_ID, // Google Analytics / GA
                 ],

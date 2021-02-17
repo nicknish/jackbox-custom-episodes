@@ -1,37 +1,39 @@
 {
-  "name": "custom-jackbox-episodes",
-  "version": "1.0.0",
-  "private": true,
-  "description": "Custom Jackbox Episodes",
-  "author": "Nicholas Nishiguchi",
-  "keywords": [
-    "gatsby"
-  ],
-  "scripts": {
-    "develop": "gatsby develop",
-    "start": "gatsby develop",
-    "build": "gatsby build",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean"
-  },
-  "dependencies": {
-    "autoprefixer": "^10.2.4",
-    "classnames": "^2.2.6",
-    "date-fns": "^2.17.0",
-    "dotenv": "^8.2.0",
-    "gatsby": "^2.32.3",
-    "gatsby-plugin-google-gtag": "^2.8.0",
-    "gatsby-plugin-manifest": "^2.12.0",
-    "gatsby-plugin-offline": "^3.10.0",
-    "gatsby-plugin-postcss": "^3.7.0",
-    "gatsby-plugin-react-helmet": "^3.10.0",
-    "gatsby-plugin-sitemap": "^2.12.0",
-    "gatsby-source-google-sheets": "^1.1.1",
-    "postcss": "^8.2.6",
-    "postcss-preset-env": "^6.7.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-helmet": "^6.1.0",
-    "tailwindcss": "^2.0.3"
-  }
+    "name": "custom-jackbox-episodes",
+    "version": "1.0.0",
+    "private": true,
+    "description": "Custom Jackbox Episodes",
+    "author": "Nick Nish",
+    "keywords": [
+        "gatsby"
+    ],
+    "scripts": {
+        "develop": "gatsby develop",
+        "start": "gatsby develop",
+        "build": "gatsby build",
+        "serve": "gatsby serve",
+        "clean": "gatsby clean"
+    },
+    "dependencies": {
+        "classnames": "^2.2.6",
+        "date-fns": "^2.17.0",
+        "dotenv": "^8.2.0",
+        "gatsby": "^2.32.3",
+        "gatsby-plugin-google-gtag": "^2.8.0",
+        "gatsby-plugin-manifest": "^2.12.0",
+        "gatsby-plugin-offline": "^3.10.0",
+        "gatsby-plugin-postcss": "^3.7.0",
+        "gatsby-plugin-react-helmet": "^3.10.0",
+        "gatsby-plugin-sitemap": "^2.12.0",
+        "gatsby-source-google-sheets": "^1.1.1",
+        "lodash": "^4.17.20",
+        "postcss": "^8.2.6",
+        "postcss-import": "^14.0.0",
+        "postcss-preset-env": "^6.7.0",
+        "react": "^16.13.1",
+        "react-dom": "^16.13.1",
+        "react-helmet": "^6.1.0",
+        "react-use": "^17.1.1",
+        "tailwindcss": "^2.0.3"
+    }
 }

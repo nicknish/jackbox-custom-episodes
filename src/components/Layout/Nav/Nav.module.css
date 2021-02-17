@@ -5,13 +5,12 @@
 }
 
 .nav {
-    display: flex;
+    composes: flex items-center from global;
     justify-content: space-between;
 }
 
 .cta {
-    display: flex;
-    align-items: center;
+    composes: flex items-center from global;
 }
 
 .logo {
