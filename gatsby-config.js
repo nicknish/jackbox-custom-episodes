@@ -2,8 +2,9 @@ require('dotenv').config()
 
 module.exports = {
     siteMetadata: {
-        title: 'Custom Jackbox Episodes',
-        siteUrl: 'https://custom-jackbox-episodes.netlify.com',
+        title: 'Jackbox Custom Episodes',
+        description: 'Find Jackbox custom episode codes.',
+        siteUrl: 'https://jackbox-custom-episodes.netlify.app',
     },
     plugins: [
         'gatsby-plugin-postcss',

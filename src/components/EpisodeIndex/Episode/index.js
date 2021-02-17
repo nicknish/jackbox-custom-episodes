@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState, useRef } from 'react'
 import { useCopyToClipboard } from 'react-use'
 
 import { Button, ButtonSizes, ButtonThemes } from '../../common/Button'
@@ -8,7 +8,26 @@ import styles from './Episode.module.css'
 
 export const Episode = ({ code, name, age, date, isNsfw }) => {
     const [state, copyToClipboard] = useCopyToClipboard()
+    const [copyText, setCopyText] = useState(null)
+    const copyTextTimer = useRef()
     const handleCopyClick = () => copyToClipboard(code)
+
+    useEffect(() => {
+        if (state.error) {
+            setCopyText('Copy error')
+        } else if (state.value) {
+            setCopyText('Copied!')
+        }
+
+        // Clears timer
+        if (copyTextTimer.current) {
+            clearTimeout(copyTextTimer.current)
+        }
+        // Sets timer
+        copyTextTimer.current = setTimeout(() => {
+            setCopyText(null)
+        }, 1.5 * 1000)
+    }, [state])
 
     return (
         <div className={styles.episode}>
@@ -29,7 +48,7 @@ export const Episode = ({ code, name, age, date, isNsfw }) => {
                                 size={ButtonSizes.Small}
                                 theme={ButtonThemes.Base}
                             >
-                                {state.error ? `Copy error` : state.value ? `Copied!` : 'Copy'}
+                                {copyText || 'Copy'}
                             </Button>
                         </div>
                     </section>

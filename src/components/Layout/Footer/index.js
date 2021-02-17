@@ -12,7 +12,7 @@ export const Footer = () => {
             <section className={styles.footerTop}>
                 <nav className={styles.footerNav}>
                     {MENU.map(({ label, ...props }) => (
-                        <div className={styles.footerNavItemContainer}>
+                        <div className={styles.footerNavItemContainer} key={label}>
                             <Link className={styles.footerNavItem} {...props}>
                                 {label}
                             </Link>

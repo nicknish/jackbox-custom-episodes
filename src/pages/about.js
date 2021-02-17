@@ -5,7 +5,7 @@ import { About } from '../components/About'
 
 const AboutPage = () => {
     return (
-        <Layout>
+        <Layout title="About">
             <About />
         </Layout>
     )
